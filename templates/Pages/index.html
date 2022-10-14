@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	<title> HPS </title>
+{% endblock title %}
+
+{% block main_content %}
+  <div>
+	<img class="poster" src="https://images-eu.ssl-images-amazon.com/images/I/515cFrnGLPL.jpg">
+</div>
+
+  <section class="main-container" >
+	<div class="carrousel-filmes location" id="home">
+		<h1>Main content</h1>
+		<div class="box row scrollhorizontal">
+		  {% comment %} <a href="" {% endcomment %}
+		  {% comment %} <a href="{% url 'register' %}"> R</a> {% endcomment %}
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-01.jpg' %}" ></a>
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-02.jpg' %}" ></a>
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-03.jpg' %}" alt=""></a> 
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-04.jpg' %}" alt=""></a> 
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-05.jpg' %}" alt=""></a> 
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-06.jpg' %}" alt=""></a> 
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-07.jpg' %}" alt=""></a> 
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-08.jpg' %}" alt=""></a> 
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-09.jpg' %}" alt=""></a> 
+		  <a href="{% url 'movie' %}"><img src="{% static 'images/capa-10.jpg' %}" alt=""></a>      
+		</div>
+	</div>
+	
+	<div class="carrousel-filmes">
+	<h1>New Movies</h1>
+	  <div class="box">
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-01.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-02.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-03.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-04.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-05.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-06.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-07.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-08.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-09.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-10.jpg' %}" alt=""></a>     
+	  </div>
+	</div>
+	
+	<div class="carrousel-filmes">
+	  <h1 id="Thrilling-Series">Thrilling Series</h1>
+	  <div class="box">
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-01.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-02.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-03.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-04.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-05.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-06.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-07.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-08.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-09.jpg' %}" alt=""></a>
+		<a href="{% url 'movie' %}"><img src="{% static 'images/capa-10.jpg' %}" alt=""></a>     
+	  </div>
+	</div>
+{% endblock main_content %}
+
+ 

@@ -1,0 +1,26 @@
+<div class="wrapper">
+    <header class="header">
+      <!-- <div class="circletag"><img src="../favicons/android-chrome-192x192.png" alt="logo"></div> -->
+      <p>HPS Entertainments</p>
+  </header>
+  <nav class="nav"> 
+      <div class="search">
+          <input type="text" id="search" name="search" placeholder="Search">
+          <button type="submit" onclick="search()" class="fa-solid fa-magnifying-glass"></button>
+      </div>
+      <div class="Navbutton">
+          <a href="#">Home</a>
+          <a href="#">Series</a>
+          <a href="#">Movies</a>
+          <a href="#">Most watched</a>
+          <a href="{% url 'register' %}">register</a>
+      </div>
+      <div class="login">
+          <button class="login">Login</button>
+          <div class="loginbox">
+              <input type="text" placeholder="Email"><br>
+              <input type="text" placeholder="Password"><br>
+              <button type="submit">Login</button>
+          </div>
+      </div>
+  </nav>

@@ -1,0 +1,143 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HPS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href={% static 'css/styles.css' %}  >
+ 
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <!-- <header>
+      <div class="netflixLogo">
+        <a id="logo" href="#home"><img src="html/img/logo.PNG?raw=true" alt="Logo Image"></a>
+      </div>      
+      <nav class="main-nav">                
+        <a href="#home">Home</a>
+        <a href="#tvShows">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#originals">Originals</a>
+        <a href="#">Recently Added</a>
+      </nav>
+      <nav class="sub-nav">
+        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+        <a href="#">Account</a>        
+      </nav>      
+    </header> -->
+
+    <header class="header">
+      <!-- <div class="circletag"><img src="../favicons/android-chrome-192x192.png" alt="logo"></div> -->
+      <p>HPS Entertainments</p>
+  </header>
+  <nav class="nav"> 
+      <div class="search">
+          <input type="text" id="search" name="search" placeholder="Search">
+          <button type="submit" onclick="search()" class="fa-solid fa-magnifying-glass"></button>
+      </div>
+      <div class="Navbutton">
+          <a href="#">Home</a>
+          <a href="#">Series</a>
+          <a href="#">Movies</a>
+          <a href="#">Most watched</a>
+      </div>
+      <div class="login">
+          <button class="login">Login</button>
+          <div class="loginbox">
+              <input type="text" placeholder="Email"><br>
+              <input type="text" placeholder="Password"><br>
+              <button type="submit">Login</button>
+          </div>
+      </div>
+  </nav>
+  <!-- <input type="text" id="search" name="search">
+  <button onclick="search()">search</button>
+
+  Like percentage: <input type="text" name="result" id="result"> -->
+  <div>
+      <img class="poster" src="https://images-eu.ssl-images-amazon.com/images/I/515cFrnGLPL.jpg">
+  </div>
+
+    <section class="main-container" >
+      <div class="carrousel-filmes location" id="home">
+          <h1>Main content</h1>
+          <div class="box row scrollhorizontal">
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-01.jpg' %}" ></a>
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-02.jpg' %}" ></a>
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-03.jpg' %}" alt=""></a> 
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-04.jpg' %}" alt=""></a> 
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-05.jpg' %}" alt=""></a> 
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-06.jpg' %}" alt=""></a> 
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-07.jpg' %}" alt=""></a> 
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-08.jpg' %}" alt=""></a> 
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-09.jpg' %}" alt=""></a> 
+            <a href="{% url 'movie' %}"><img src="{% static 'images/capa-10.jpg' %}" alt=""></a>      
+          </div>
+      </div>
+      
+      <div class="carrousel-filmes">
+      <h1>New Movies</h1>
+        <div class="box">
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-01.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-02.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-03.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-04.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-05.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-06.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-07.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-08.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-09.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-10.jpg' %}" alt=""></a>     
+        </div>
+      </div>
+      
+      <div class="carrousel-filmes">
+        <h1 id="Thrilling-Series">Thrilling Series</h1>
+        <div class="box">
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-01.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-02.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-03.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-04.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-05.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-06.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-07.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-08.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-09.jpg' %}" alt=""></a>
+          <a href="{% url 'movie' %}"><img src="{% static 'images/capa-10.jpg' %}" alt=""></a>     
+        </div>
+      </div>
+
+
+    <section class="link">
+      <div class="logos">
+        <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+      </div>
+      <div class="sub-links">
+        <ul>
+          <li><a href="#">Audio and Subtitles</a></li>
+          <li><a href="#">Audio Description</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Legal Notices</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy 2022 HPC</p>
+    </footer>
+  </div>
+</body>
+</html>

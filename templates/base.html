@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% block title %}
+	  <title>HPS</title>
+  {% endblock title %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href={% static 'css/styles.css' %}  >
+ 
+</head>
+<body>
+
+	{% include "partials/_navbar.html" %}
+
+  	{% block main_content %}
+  		<h1> this is the base<h1>
+	{% endblock main_content %}
+
+	{% include "partials/_footer.html" %}
+</body>
+</html>

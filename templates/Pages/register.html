@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	<title>Register</title>
+{% endblock title %}
+
+{% block main_content %}
+	<form method="POST" enctype="multipart/form-data">
+		{% csrf_token %}
+		<br>
+		<br>
+		Name: <input type="text" name="name" id="name"><br>
+		Email: <input type"email" name="email" id="email"><br>
+
+		<h4>Plan type</h4>
+		Mobile: <input type="radio" name="plan_type" id="Mobile" value="Mobile">
+		Full: <input type="radio" name="plan_type" id="Full" value="Full"><br>
+		
+
+		Password: <input type="password" name="password" id="password"> <br>
+
+		Profile Pic: <input type="file" name="pic" id="pic"><br><br>
+		<input type="submit" value="Register">
+	</form>
+{% endblock main_content %}
